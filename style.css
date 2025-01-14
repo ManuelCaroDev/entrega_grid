@@ -9,7 +9,7 @@
 }
 
 body {
-  padding: 20px 0px;
+  padding: var(--spacing);
   background-color: var(--primary-color);
 }
 /* Resto del CSS */
@@ -24,8 +24,8 @@ body {
 }
 
 header {
-  color: white;
-  background-color: #2bc5cd;
+  color: var(--primary-color);
+  background-color: var(--blue-color);
   grid-row: 1 / 3;
 }
 
@@ -78,7 +78,7 @@ main > h2 {
 }
 
 footer {
-  color: white;
+  color: var(--primary-color);
   padding: 15px;
   background-color: var(--orange-color);
   grid-column: 2 / 4;
@@ -95,6 +95,7 @@ footer > p {
 footer > button {
   width: 150px;
   height: 50px;
+  color: var(--secondary-color);
   font-size: x-small;
   border: none;
   background-color: var(--primary-color);
@@ -103,9 +104,8 @@ footer > button {
 
 @media (max-width: 970px) {
   .grid-container {
-    grid-auto-flow: column;
     grid-template-columns: repeat(2, 300px);
-    grid-template-rows: repeat(5, 200px);
+    grid-template-rows: repeat(6, 200px);
   }
   .school {
     grid-column: 2;
@@ -118,6 +118,7 @@ footer > button {
   }
   .alumni {
     grid-column: 1 / 3;
+    grid-row: 4 / 6;
   }
   footer {
     grid-column: 1 / 3;
@@ -160,7 +161,7 @@ footer > button {
     margin: 0px;
   }
   footer > button {
-    width: 125px;
-    height: 30px;
+    width: 120px;
+    height: 25px;
   }
 }
