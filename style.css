@@ -167,6 +167,12 @@ footer > button {
     grid-column: 1;
     grid-row: 8;
   }
+  footer > h3 {
+    margin-top: 10px;
+  }
+  footer > p {
+    margin-top: 5px;
+  }
   footer > button {
     width: 120px;
     height: 25px;
